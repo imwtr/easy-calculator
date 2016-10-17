@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta charset="UTF-8">
+	<title>calculator</title>
+	<link rel="stylesheet" type="text/css" href="css/calculator.css">
+</head>
+<body>
+
+	<h5>计算计算</h5>
+	<!-- 计算器 -->
+	<div class="calc-wrap">
+		<div class="calc-in-out">
+			<!-- 上一条运算记录 -->
+			<p class="calc-history" title=""></p>
+			<!-- 输入的数据 -->
+			<p class="calc-in"></p>
+			<!-- 输出的运算结果 -->
+			<p class="calc-out active"></p>
+		</div>
+		<table class="calc-operation">
+			<thead></thead>
+			<tbody>
+				<tr>
+					<td data-ac="cls" class="cls">C</td>
+					<td data-ac="del">&larr;</td>
+					<td data-ac="sq">x<sup>2</sup></td>
+					<td data-ac="mul">&times;</td>
+				</tr>
+				<tr>
+					<td data-val="7">7</td>
+					<td data-val="8">8</td>
+					<td data-val="9">9</td>
+					<td data-ac="div">&divide;</td>
+				</tr>
+				<tr>
+					<td data-val="4">4</td>
+					<td data-val="5">5</td>
+					<td data-val="6">6</td>
+					<td data-ac="plus">+</td>
+				</tr>
+				<tr>
+					<td data-val="1">1</td>
+					<td data-val="2">2</td>
+					<td data-val="3">3</td>
+					<td data-ac="minus">-</td>
+				</tr>
+					<td data-ac="per">%</td>
+					<td data-val="0">0</td>
+					<td data-ac="dot">.</td>
+					<td data-ac="eq" class="eq">=</td>
+			</tbody>
+		</table>
+	</div>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/calculator.js"></script>
+</body>
+</html>
